@@ -8,8 +8,8 @@ window.setTimeout(function() {
 		// handle input
 		if (input === "list") {
 			console.log(todos);
-			// ask for new todo
 		} else if (input === "new" ) {
+			// ask for new todo
 			var newTodo = prompt("Enter new todo");
 			// add to todos array
 			todos.push(newTodo);
