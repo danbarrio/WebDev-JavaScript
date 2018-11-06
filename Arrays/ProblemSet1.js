@@ -15,13 +15,10 @@ printReverse([1,2,3,4]);
 
 function isUniform(arr)
 {
-	// The first item in the Array	
 	var first = arr[0];
 
-	// run through the Array, starting at index 1
 	for(var i = 1; i < arr.length; i++)
 	{
-		// Compare every index starting at 1 to var first;
 		if(arr[i] !== first)
 		{
 			return false;
@@ -31,3 +28,38 @@ function isUniform(arr)
 }
 
 // run in console:   isUniform([1,1,1,1])
+
+
+// 3. Return the sum of all the numbers in the array //////////////////////////////
+
+function sumArray(arr)
+{
+	var total = 0;
+
+	arr.forEach(function(element)
+	{
+		total+= element;
+	});
+	return total;
+}
+
+// run in console:   sumArray([1,2,3])
+
+
+// 4. Write a function that takes an array of numbers and returns the highest one ///////////////
+
+function max(arr)
+{
+	var max = arr[0];
+
+	for(var i = 1; i < arr.length; i++)
+	{
+		if(arr[i] > max)
+		{
+			max = arr[i];
+		}
+	}
+	return max;
+}
+
+// run in console:   max([1,8,3])
