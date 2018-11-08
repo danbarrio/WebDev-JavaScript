@@ -21,3 +21,24 @@ var dog =
 
 // To add a property in an object, use brackets:  dog["color"] = "Black" 
 // or dot notation:  dog.color = black
+
+
+// Nesting Arrays and Objects
+
+var posts = 
+[
+	{
+		title: "Cats are awesome",
+		author: "John",
+		comments: ["Right On!", "You are dumb"]
+	},
+	{
+		title: "Cats suck",
+		author: "Dick",
+		comments: ["Dogs Rule!", "Your feet smell of poo!"]
+	}
+]
+
+// To access items within posts:
+// posts[0].title   asks for the title of the first post
+// posts[1].comments[1]  asks for the second comment of the second post 
