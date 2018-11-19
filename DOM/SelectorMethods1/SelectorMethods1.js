@@ -19,3 +19,11 @@ var tag3 = document.querySelector(".bolded");
 // querySelectorAll returns a list of items that matches
 var tags3 = document.querySelectorAll("h1");
 
+// Using the Style property to manipulate an element's style
+var tag4 = document.getElementById("highlight");
+
+tag4.style.color = "blue";
+tag4.style.border = "10px solid red";
+tag4.style.fontSize = "70px";
+tag4.style.background = "yellow";
+tag4.style.marginTop = "200px";
