@@ -20,10 +20,22 @@ var tag3 = document.querySelector(".bolded");
 var tags3 = document.querySelectorAll("h1");
 
 // Using the Style property to manipulate an element's style
-var tag4 = document.getElementById("highlight");
 
-tag4.style.color = "blue";
-tag4.style.border = "10px solid red";
-tag4.style.fontSize = "70px";
-tag4.style.background = "yellow";
-tag4.style.marginTop = "200px";
+/*
+tag1.style.color = "blue";
+tag1.style.border = "10px solid red";
+tag1.style.fontSize = "70px";
+tag1.style.background = "yellow";
+tag1.style.marginTop = "200px";
+*/
+
+// Instead of above, better to seperate concerns by using classList to change properties:
+// ADD a class to the selected element
+tag1.classList.add("exampleClass");
+
+// REMOVE a class
+// tag1.classList.remove("exampleClass");
+
+// TOGGLE a class
+// tag1.classList.toggle("exampleClass");
+
