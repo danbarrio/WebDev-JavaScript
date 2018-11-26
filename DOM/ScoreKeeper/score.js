@@ -4,6 +4,9 @@ var p2button = document.getElementById("p2");
 var resetButton = document.getElementById("reset");
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
+var numInput = document.querySelector("input[type='number']");
+var winningScoreDisplay = document.querySelector("p span");
+var p = document.querySelector("p");
 var h1 = document.querySelector("h1");
 var p1Score = 0;
 var p2Score = 0;
@@ -33,6 +36,10 @@ p2button.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
+	reset();
+});
+
+function reset(){
 	p1Score = 0;
 	p2Score = 0;
 	p1Display.textContent = 0;
@@ -40,4 +47,10 @@ resetButton.addEventListener("click", function(){
 	p1Display.classList.remove("winner");
 	p2Display.classList.remove("winner");
 	gameOver = false;
+}
+
+numInput.addEventListener("change", function(){
+	winningScoreDisplay.textContent = this.value;
+	winningScore = Number(this.value);
+	reset();
 });
